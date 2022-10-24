@@ -1,0 +1,72 @@
+1. 
+Select * from Customers
+
+2.
+Select distinct Country from Customers
+
+3. 
+Select * From Customers
+Where CustomerId like 'BL%';
+
+4. 
+Select top 100 * from Orders;
+
+5.
+Select * 
+from Customers
+where PostalCode = '1010' 
+or PostalCode = '3012' 
+or PostalCode = '12209'
+or PostalCode = '05023';
+
+6.
+Select * 
+from Orders
+Where Shipregion is not Null;
+
+7.
+Select * 
+from Customers
+Order by Country, City;
+
+8.
+
+Insert into Customers 
+Values('DAWG','Dylan Weidner','Arf ARF ','ARFER','321 Big Dawg street','Dawgs',NULL,'01307','','5864309696','13.456.456');
+
+
+9.
+
+Update Orders
+set ShipRegion = 'EuroZone'
+where ShipCountry = 'France';
+
+select * from Orders;
+
+10.
+
+delete from [Order Details]
+where Quantity = 1;
+
+
+11.
+
+select CustomerID from Orders
+where OrderID = 10290;
+
+12.
+
+select *
+from Customers 
+full join Orders on Customers.CustomerID = Orders.CustomerID;
+
+
+13.
+
+select FirstName from Employees
+where ReportsTo is null;
+
+14.
+
+select FirstName from Employees
+where ReportsTo = 2;
